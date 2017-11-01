@@ -15,9 +15,21 @@ h1 {
 }
 
 li {
-    padding-bottom: 10px;
+    padding-bottom: 4px;
 }
 
+.card-view {
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-color: #505050;
+}
+
+.button-style {
+    background: #3354ff;
+    color: #fff;
+}
 
 a:link, a:visited { text-decoration: none; color: #216108;	}
 a:hover, a:active { text-decoration: underline; color: #df7401; }
@@ -38,4 +50,5 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0.3;
 }
