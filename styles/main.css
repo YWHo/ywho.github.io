@@ -28,6 +28,13 @@ img {
     display: none;
 }
 
+.sidebar, li {
+    list-style: none;
+}
+
+a:link, a:visited { text-decoration: none; color: #216108;	}
+a:hover, a:active { text-decoration: underline; color: #df7401; }
+
 #main-sidebar {
     display: block;
 }
