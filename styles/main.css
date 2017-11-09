@@ -11,6 +11,8 @@ img {
 
 .image-box {
     background: #ff6633;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar {
