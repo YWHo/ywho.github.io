@@ -1,1 +1,33 @@
 
+/* * {
+    box-sizing: border-box;
+} */
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.image-box {
+    background: #ff6633;
+}
+
+.sidebar {
+    background-color: #345564;
+    display: none;
+}
+
+#main-sidebar {
+    display: block;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    .sidebar {
+        display: block;
+    }
+    .button-go-back {
+        display: none;
+    }
+}
