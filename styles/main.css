@@ -35,6 +35,11 @@ img {
 a:link, a:visited { text-decoration: none; color: #216108;	}
 a:hover, a:active { text-decoration: underline; color: #df7401; }
 
+.question-answer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 #main-sidebar {
     display: block;
 }
@@ -55,8 +60,7 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
 }
 
 .button-go-back {
-    background: #3354ff;
-    color: #ddd;
+
     margin-bottom: 3rem;
 }
 
