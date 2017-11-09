@@ -15,13 +15,13 @@ img {
 }
 
 .image-box {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .sidebar {
@@ -45,6 +45,12 @@ img {
     -o-background-size: cover;
     background-size: cover;
     opacity: 0.3;
+}
+
+.button-go-back {
+    background: #3354ff;
+    color: #ddd;
+    margin-bottom: 3rem;
 }
 
 /* Bigger than 550 */
