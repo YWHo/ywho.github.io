@@ -40,6 +40,10 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
     margin-bottom: 3rem;
 }
 
+.date {
+    font-style: italic;
+}
+
 #main-sidebar {
     display: block;
 }
