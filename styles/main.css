@@ -68,6 +68,14 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
     margin-bottom: 3rem;
 }
 
+.footnote {
+    font-size: 1rem;
+}
+
+.footnote-header {
+    font-size: 1.2rem;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
     .sidebar {
