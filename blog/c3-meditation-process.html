@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </head>
 
 <body>
@@ -101,63 +105,17 @@
                 </div>
             </div>
             <div class="four columns sidebar">
-                <strong>Index</strong>
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="c1-reflection-blog.html">
-                            Cultural - Reflection
-                        </a>
-                    </li>
-                    <li>
-                        <a href="c1-time-and-habits-blog.html">
-                            Cultural - Time and habits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="t2-html-css-dom-p1.html">
-                            Technical - HTML, CSS, DOM (part-1)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="t2-html-css-dom-p2.html">
-                            Technical - HTML, CSS, DOM (part-2)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="c2-emotional-intelligence.html">
-                            Cultural - Emotional Intelligence
-                        </a>
-                    </li>
-                    <li>
-                        <a href="t3-design-to-web-blog.html">
-                            Technical- Design to Web
-                        </a>
-                    </li>
-                    <li>
-                        <a href="c3-meditation-process.html">
-                            Cultural - Meditation Process
-                        </a>
-                    </li>
-                    <li>
-                        <a href="t4-javascript-basics.html">
-                            Technical - Javascript Basics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="c4-daily-mindfulness.html">
-                            Cultural - Daily Mindfulness
-                        </a>
-                    </li>
-                </ul>
+                <div w3-include-html="sideIndex.html"></div>
             </div>
         </div>
         <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
     </div>
 
     <div class="extra1" role="presentation"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
 
 </body>
 
