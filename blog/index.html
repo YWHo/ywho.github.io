@@ -43,15 +43,20 @@
         </p>
       </div>
       <div class="four columns sidebar" id="main-sidebar">
-          <div w3-include-html="sideIndex.html"></div>
+          <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
       </div>
     </div>
   </div>
 
   <div class="extra1" role="presentation"></div>
 
-
   <script>
+    // This part of the code force browser to reload latest sideIndex.html
+    let incSideBar = document.getElementById('includeSidebar');
+    let filePath = "sideIndex.html?random=" + Math.random();
+    incSideBar.setAttribute("w3-include-html", filePath)
+
+   // Activate file include
     w3.includeHTML();
   </script>
 
