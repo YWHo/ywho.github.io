@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Technical - Problem Solving</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Technical - Problem Solving</h1>
+        </div>
+        <div class="row date">24 November 2017</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="https://innovateuk.blog.gov.uk/wp-content/uploads/sites/153/2017/07/Problem-solving-620-620x397.jpg"
+                        alt="Problem Solving image" />
+                </div>
+                <div class="question-answer">
+                    <h4>The story of problem solving</h4>
+                    <p>
+                        While maintaining this home page (ywho.github.io), I was having the problem of duplicating the codes for side navigation bar in different blog pages. As the number of blogs increased, the workload increase also. To solve the problem of code duplication, I tried to do some google searching to see if I can include html file in some way. This will allow me to maintain single file only whenever I need to update the side navigation bar. Voila, I found a solution from w3school to use 'w3-include-html' attribute, together with 'w3.js' javascript script.      
+                    </p>
+                    <p>
+                        Although the problem was solved, I faced new follow up problems. Anyway, let just focus on the first problem that I mentioned above. After solving the first problem, I was feeling really happy, because I can immediately see the effect of saving time in updating the side navigation bar.
+                    </p>
+                    <p>
+                        From the experience, I learnt that there is always a solution at some place, because someone might have the same problem before me.
+                    </p>
+
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        Problem Solving Process
+                    </h4>
+                    <p>
+                        When solving a coding problem, I usually use process such as: 'R eading error messages', 'Googling', 'Console.logging', 'Pseudocode', and 'Improving process with reflection'. There are no specific sequence in using those process. It is a personal judgement on which one is more suitable for certain scenario. In some real difficult case where I'm really stuck, I will start asking peers or coaches for help.
+                    </p>
+
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        About .map() in Javascript Array
+                    </h4>
+                    <p>
+                        The .map() method will internally loop through every element in an array, then pass each element to a function to be processed. Each processed result will be saved in a new array. At the end of the looping, the new array will be returned as the result of the operation.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>About .filter() in Javascript Array</h4>
+                    <p>
+                        The .filter() 
+                    </p>
+                    <p>
+                        Let use washing machines as an example. All washing machines are built with several
+                        functions: 'wash', 'rinse', and 'tumble-dry'. When we set
+                        a washine machine to 'wash', the washing machine will perform
+                        a series of operations such as: water-in, detergent-in, and
+                        spin clothes. When we set a washine machine to 'rinse', the
+                        washing machine will perform a series of operations such
+                        as: water-in, spin, and water-out. When we set a washine
+                        machine to 'tumble-dry', the washing machine will perform
+                        a series of operations such as: water-out, and spin quickly.
+                        One advantage about
+                        <em>functions</em> is that we don't really need to know the detail
+                        of the operations within
+                        <em>functions</em>. We just need to know how to use
+                        <em>functions</em> to achieve certain purposes.
+                    </p>
+                    <p>
+                        In coding, the
+                        <em>functions</em> of a washing machine could be 'wash()', 'rinse()',
+                        and 'tumble-dry()'. All the details of the operations are
+                        encapsulated inside 'wash()', 'rinse()', and 'tumble-dry()'.
+                        We could invoke 'wash()', 'rinse()', or 'tumble-dry()' as
+                        many times as we need. The behaviours will be the same no
+                        matter how many times a function is invoked. The reusablity
+                        of same behaviours is the reason why functions are useful.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4></h4>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div class="four columns sidebar">
+                <div w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+    <div class="container footnote">
+        <h4 class="footnote-header">References:</h4>
+        <ul>
+            <li>
+                <a href="https://www.getsmarter.com/career-advice/industry-advice/difference-html-css-javascript">
+                    THE DIFFERENCE BETWEEN HTML, CSS AND JAVASCRIPT | FAQS</a>
+            </li>
+            <li>
+                <a href="https://eloquentjavascript.net/04_data.html">
+                    Data Structures: Objects and Arrays</a>
+            </li>
+            <li>
+                <a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html">
+                    Programming - Functions</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+</body>
+
+</html>
