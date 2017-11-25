@@ -34,9 +34,9 @@
                         alt="Problem Solving image" />
                 </div>
                 <div class="question-answer">
-                    <h4>The story of problem solving</h4>
+                    <h4>The story of my problem solving</h4>
                     <p>
-                        While maintaining this home page (ywho.github.io), I was having the problem of duplicating the codes for side navigation bar in different blog pages. As the number of blogs increased, the workload increase also. To solve the problem of code duplication, I tried to do some google searching to see if I can include html file in some way. This will allow me to maintain single file only whenever I need to update the side navigation bar. Voila, I found a solution from w3school to use 'w3-include-html' attribute, together with 'w3.js' javascript script.      
+                        This home page (ywho.github.io) has the problem of code duplication at side navigation bar. Originally, every single post will need to have its side navigation updated individually. As the number of posts increased, the workload increase also. To solve the problem of code duplication, I tried to do some googling to see if I can include html file in some way. This will allow me to maintain just a single file whenever I need to update the side navigation bar. Voila, I found a solution from w3school. I just need to use 'w3-include-html' attribute and a link to 'w3.js' file in the script tag.      
                     </p>
                     <p>
                         Although the problem was solved, I faced new follow up problems. Anyway, let just focus on the first problem that I mentioned above. After solving the first problem, I was feeling really happy, because I can immediately see the effect of saving time in updating the side navigation bar.
@@ -51,7 +51,7 @@
                         Problem Solving Process
                     </h4>
                     <p>
-                        When solving a coding problem, I usually use process such as: 'R eading error messages', 'Googling', 'Console.logging', 'Pseudocode', and 'Improving process with reflection'. There are no specific sequence in using those process. It is a personal judgement on which one is more suitable for certain scenario. In some real difficult case where I'm really stuck, I will start asking peers or coaches for help.
+                        When solving a coding problem, I usually use combination of process such as: 'Reading error messages', 'Googling', 'Console.logging', 'Pseudocode', and 'Improving process with reflection'. There are no specific sequence in using those process. It is a personal judgement on which one is more suitable for certain scenario. In some real difficult case where I'm really stuck, I will start asking peers or coaches for help. Regarding Rubber ducky method, I guess I did it all the time, when I tried to rephrase something technical using my own words to a non-technical person.
                     </p>
 
                 </div>
@@ -60,44 +60,19 @@
                         About .map() in Javascript Array
                     </h4>
                     <p>
-                        The .map() method will internally loop through every element in an array, then pass each element to a function to be processed. Each processed result will be saved in a new array. At the end of the looping, the new array will be returned as the result of the operation.
+                        The .map() method will internally loop through every element in an array, then pass each element to a function to be processed. Each processed result will be saved into a new array. At the end of the looping, the new array will be returned as the result of the operation.
                     </p>
                 </div>
                 <div class="question-answer">
                     <h4>About .filter() in Javascript Array</h4>
                     <p>
-                        The .filter() 
-                    </p>
-                    <p>
-                        Let use washing machines as an example. All washing machines are built with several
-                        functions: 'wash', 'rinse', and 'tumble-dry'. When we set
-                        a washine machine to 'wash', the washing machine will perform
-                        a series of operations such as: water-in, detergent-in, and
-                        spin clothes. When we set a washine machine to 'rinse', the
-                        washing machine will perform a series of operations such
-                        as: water-in, spin, and water-out. When we set a washine
-                        machine to 'tumble-dry', the washing machine will perform
-                        a series of operations such as: water-out, and spin quickly.
-                        One advantage about
-                        <em>functions</em> is that we don't really need to know the detail
-                        of the operations within
-                        <em>functions</em>. We just need to know how to use
-                        <em>functions</em> to achieve certain purposes.
-                    </p>
-                    <p>
-                        In coding, the
-                        <em>functions</em> of a washing machine could be 'wash()', 'rinse()',
-                        and 'tumble-dry()'. All the details of the operations are
-                        encapsulated inside 'wash()', 'rinse()', and 'tumble-dry()'.
-                        We could invoke 'wash()', 'rinse()', or 'tumble-dry()' as
-                        many times as we need. The behaviours will be the same no
-                        matter how many times a function is invoked. The reusablity
-                        of same behaviours is the reason why functions are useful.
+                        The .filter() method will internally loop though every element in an array, then test every element with the test condition provided. Any element that passed the test condition will be saved into a new array. At the end of the looping, the new array with those elements that passed the test condition, will be returned. 
                     </p>
                 </div>
                 <div class="question-answer">
-                    <h4></h4>
+                    <h4>About .reduce() in Javascript Array</h4>
                     <p>
+                        The .reduce() method is a shortcut way to accumulate every element inside the array to a single result. First, it has a default <em>Total</em> that starts at 0. Then it will internally loop through every element from left to right. Each element will do mathematic operation with <em>Total</em>, and save the result back to <em>Total</em>. The new <em>Total</em> will be used for operation with the next element. The final result will be the accumulated results of the mathematic operation upon every element. Regarding the mathematic operation, it can be any operation as long as the operation involves both <em>Total<em> and an array element.
                     </p>
                 </div>
             </div>
@@ -111,16 +86,44 @@
         <h4 class="footnote-header">References:</h4>
         <ul>
             <li>
-                <a href="https://www.getsmarter.com/career-advice/industry-advice/difference-html-css-javascript">
-                    THE DIFFERENCE BETWEEN HTML, CSS AND JAVASCRIPT | FAQS</a>
+                <a href="https://en.wikipedia.org/wiki/Pseudocode">
+                    Wikipedia - Pseudocode
+                </a>
             </li>
             <li>
-                <a href="https://eloquentjavascript.net/04_data.html">
-                    Data Structures: Objects and Arrays</a>
+                <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">
+                    Wikipedia - Rubber duck debugging
+                </a>
             </li>
             <li>
-                <a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html">
-                    Programming - Functions</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">
+                   MDN web docs - Array.prototype.map()
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">
+                    MDN web docs - Array.prototype.filter()
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">
+                    MDN web docs - Array.prototype.reduce()
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/jsref/jsref_map.asp">
+                    w3schools.com - JavaScript Array map() Method
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/jsref/jsref_filter.asp">
+                    w3schools.com - JavaScript Array filter() Method
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">
+                    w3schools.com - JavaScript Array reduce() Method
+                </a>
             </li>
         </ul>
     </div>
