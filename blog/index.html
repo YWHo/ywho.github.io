@@ -51,13 +51,12 @@
   <div class="extra1" role="presentation"></div>
 
   <script>
-    // This part of the code force browser to reload latest sideIndex.html
-    let incSideBar = document.getElementById('includeSidebar');
-    let filePath = "sideIndex.html?random=" + Math.random();
-    incSideBar.setAttribute("w3-include-html", filePath)
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
 
-   // Activate file include
-    w3.includeHTML();
+        w3.includeHTML();
   </script>
 
 </body>
