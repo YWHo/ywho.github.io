@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cultural - Control</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Cultural - Control</h1>
+        </div>
+        <div class="row date">02 December 2017</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="http://davidpoulos.com/wp-content/uploads/2014/05/control.jpg" alt="Control image"
+                    />
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        When programming, what are some of your triggers? What causes a disproportionate emotional response?
+                    </h4>
+                    <p>
+                        My triggers in programming are when someone's code is too messy or introduces no brainer bugs into a working code. I took pride in highly organized and quality code. I get upset when my teammate wrote a messy code in the place that we share editing. I will usually feeling very angry when a lenghty and tiring session of debugging lead me to the discovery that the cause was due to silly code. This will surely make me curse bad words.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        How did you find the Siberian North Railroad exercise (Stop, Breathe, Notice, Reflect, Respond)?
+                    </h4>
+                    <p>
+                        Siberian North Railroad is really a practical technique. I agree with the author that 'Stop' is the most important of all steps. As long as I could 'Stop', even just for a second or two of not feeding the emotion monster, I would have enough time to process my emotion and retain my control. When negative emotion is triggered, my tendency is to burst it out to feel better. Well, the bursting seems like an easy way to release the negative feeling inside me. But, it is not a wise move. What caused me feeling anger, may be was just due to my  misunderstanding or lack of emphaty. While my emotion is quickly seeking for instant justice, I should pause to question back myself, "Is exploding really a best way to solve this?". Usually, pausing won't be possible, because the timeframe from triggering to emotional response is very short. It looks like Siberian North Railroad is the best solution to make the impossible becomes possible.
+                    </p>
+                </div>
+            </div>
+            <div class="four columns sidebar">
+                <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
+
+        w3.includeHTML();
+    </script>
+
+</body>
+
+</html>
