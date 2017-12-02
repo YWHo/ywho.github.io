@@ -87,6 +87,16 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
     font-size: 1.2rem;
 }
 
+pre.syntaxbox {
+    font-family: monospace;
+    white-space: pre-wrap;
+    border-left: 4px solid #ccc;
+    background-color: #99ccee;
+    padding: 8px 16px; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
     .sidebar {

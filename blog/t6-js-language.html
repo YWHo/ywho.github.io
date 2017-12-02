@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Technical - JavaScript Language</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Technical - JavaScript Language</h1>
+        </div>
+        <div class="row date">02 December 2017</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="http://humanities.drury.edu/wp-content/uploads/2017/04/post-picture-2.png"
+                        alt="Language image" />
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        parenthesis: ()
+                    </h4>
+                    <p>
+                        There are many ways to look at parenthesis:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>grouping operator</strong>: Parenthesis can be used as an operator to group mathematical operations
+                            <pre class="syntaxbox">a = 2 * (7 + b)</pre>
+                        </li>
+                        <li>
+                            <strong>containing operator</strong>: Parenthesis can be used as a container to enclose an expression
+
+                            <pre class="syntaxbox">if (a > b) {
+    // other codes
+}</pre>
+                        </li>
+                        <li>
+                            <strong>function declaration (without or without function name)</strong>: when a word 'function'
+                            is followed by '()', it indicates a function declaration.
+                            <pre class="syntaxbox">function () {
+    // other codes
+}
+
+function (param1, param2) {
+    // other codes
+}
+
+function doSomething() {
+    // other codes
+}
+
+function doMoreThing(param1, param2) {
+    // other codes
+}</pre>
+                        </li>
+                        <li>
+                            <strong>invoking a function</strong>: Parenthesis at the back of a function name is invoking a function
+                            <pre class="syntaxbox">doSomething();
+
+doMoreThing("thing1", "thing2");</pre>
+                        </li>
+                        <li>
+                            <strong>function expression</strong>: Parenthesis enclosing a function declaration is called 'function expression'
+                            <pre class="syntaxbox">(function () {
+    // other codes
+})();
+
+(function () {
+    // other codes
+}());
+
+(function doSomething() {
+    // other codes
+}());</pre>
+                        </li>
+                        <li>
+                            <strong>arrow notation</strong>: Parenthesis followed by an arrow '=>', is a shorter syntax for function expression
+                            <pre class="syntaxbox">() => {
+    // other codes
+}
+
+(param1, param2) => {
+    // other codes
+}</pre>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        brackets: []
+                    </h4>
+                    <p>
+                        Brackets are mostly for operations related to Arrays
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Array declaration</strong>: Brackets with contents after an assignment statement (=) is to create for array creation.
+                            <pre class="syntaxbox">var fruits = ["Apple", "Orange", "Banana"];
+
+var cars = [
+        "Mazda",
+        "Holden",
+        "Toyota",
+        "Nissan",
+        "Honda"
+    ];
+
+var emptiness = [];</pre>
+                        </li>
+                        <li>
+                            <strong>Accessing Array elements</strong>: Brackets with a numeric value after an Array name is to access an element in an array. The numeric value inside the brackets is the index of array elements.
+                            <pre class="syntaxbox">fruits[1]
+                                
+cars[2]</pre>
+                        </li>
+                        <li>
+                            <strong>Accessing Object properties</strong>: Brackets with a string value after an Object name is to access an element in an object.
+                            <pre class="syntaxbox">person["name"]
+
+car["door"]</pre>
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h4>braces {}</h4>
+                    <p>Braces are for blocks and objects</p>
+                    <ul>
+                        <li>
+                            <strong>Indicating a block</strong>: Braces are to indicate a block, in the case of if-then-else, switch-statement, looping, or functions
+                            <pre class="syntaxbox">if (...) {
+    //
+    // content inside a block
+    //
+}
+
+switch(...) {
+    //
+    //content inside a block
+    //
+}
+
+while (...) {
+    //
+    // content inside a block
+    //
+}
+
+for (;;) {
+    //
+    // content inside a block
+    //
+}
+
+function doSomething() {
+    //
+    // content inside a block
+    //
+}
+
+var xyz = function() {
+    //
+    // content inside a block
+    //
+}</pre>
+                        </li>
+                        <li>
+                            <strong>Object literals</strong>: Braces after an assignment statement (=) with the content name (or key) value pairs is for object creation.
+                            <pre class="syntaxbox">var person = {
+    name : "Bob",
+    age : 35,
+    gender : "Male",
+    occupation : "Bank security"
+}
+
+var car = {
+    type : 'Toyota',
+    model : 'Prius C',
+    make : '2017',
+    price : '$29990',
+};
+                            </pre>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        single quotes: ''
+                    </h4>
+                    <p>
+                        Single quotes are for string creation
+                    </p>
+                    <pre class="syntaxbox">var say = 'She sells seashells by the seashore'
+
+var name = 'Tony Stark'</pre>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        double quotes: ""
+                    </h4>
+                    <p>
+                        Double quotes are also for string creation
+                    </p>
+                    <pre class="syntaxbox">var say = "She sells seashells by the seashore"
+                            
+var name = "Tony Stark"</pre>
+                </div>
+            </div>
+            <div class="four columns sidebar">
+                <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+    <div class="container footnote">
+        <h4 class="footnote-header">References:</h4>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping">
+                    MDN - Grouping operator
+                </a>
+            </li>
+            <li>
+                <a href="http://processingjs.org/reference/parentheses/">
+                    processingjs.org - parentheis
+                </a>
+            </li>
+            <li><a href="https://stackoverflow.com/questions/1634268/explain-the-encapsulated-anonymous-function-syntax">StackOverflow - encapsulated anonymous function syntax
+                
+                </a>
+                    
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Immediately-invoked_function_expression">Wikipedia - Immediately-invoked function expression</a>
+            </li>
+            <li>
+                <a href="http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html">An Introduction to IIFEs - Immediately Invoked Function Expressions</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+                    MDN - Arrow functions
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/js/js_properties.asp">w3Schools - JavaScriptObject Properties</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals">MDN - Object Literals</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
+
+        w3.includeHTML();
+
+    </script>
+
+</body>
+
+</html>
