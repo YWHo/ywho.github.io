@@ -16,7 +16,6 @@ body {
 }
 
 .image-box img {
-    position: absolute;
     width: auto;
     height: auto;
     max-height: 100%;
@@ -27,7 +26,6 @@ body {
     bottom: 0;  
     left: 0;  
     right: 0;
-
 }
 
 .container {
