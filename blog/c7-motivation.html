@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cultural - Control</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Cultural - Motivation</h1>
+        </div>
+        <div class="row date">20 December 2017</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="https://pi.tedcdn.com/r/tedideas.files.wordpress.com/2015/05/dan_ariely_work_ideas-ted-com.jpg"
+                        alt="Motivation image" />
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        How does life look through the 'pleasure, passion and purpose' lens?
+                    </h4>
+                    <p>
+                        'Pleasure' comes from chasing for the next high in life. Unfortunately, the happiness
+                        obtained from 'pleasure' is short-term and difficult to maintain.
+                    </p>
+                    <p>
+                        'passion' is also called as 'flow'. When the difficulty of a task match the skill
+                        level of a person, 'flow' occurs. The person will be so focus
+                        on a task that time just flies by.
+                    </p>
+                    <p>
+                        'purpose' is the strongest motivation in life. It is something meaningful and bigger
+                        than what a person can do now. The happiness arises from
+                        'purpose' can last a very long time.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        From the 'discovering values and higher purpose' exercise, what are your core values? what do you stand for?
+                    </h4>
+                    <p>
+                        I'm still not sure what is really my core values. I could feel a strong emotion within me when I see or read anything about injustice, exploitation or deceiving acts. I have strong wish to bring down kleptocracy governments around the world. I have strong desire to end human trafficking or slavery. I felt pity on those drug mule who was tricked into smuggling and has to face death penalty while the real culprit behind is still living a lavish lifestyle. I despise technology companies that use their technology skills to exploit non-technical people, such as Apple purposely slow down the speed of their old devices to trick its supporters to buy new models every year. While the author wish for World Peace, I wish for no one going hunger or no one worry about not enough money to put food on their tables.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        How did you find the resilience ideas and meditation exercise?
+                    </h4>
+                    <p>
+                        After reading the book, I'm surprised that resilience can be trained. Everything start from Inner Calm, then using meditation exercise to experience both negative and positive emotions to train emotional resilience. Finally, we train our cognitive ability by recognize that we have tendency to equal 1 failure to 3 success in our lives, and it is our best interest to put more focus on the success. We could recover faster if we use realistic evidences to suggest that our setback is temporary and there is still hope to move forward. It stuck me that coding tasks have the similarity. We may face bugs or technical difficulty when doing coding. But, when we gather realistic evidences through debugging or new ideas by other technical people, we could move forward in our coding.
+                    </p>
+                </div>
+            </div>
+            <div class="four columns sidebar">
+                <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
+
+        w3.includeHTML();
+
+    </script>
+
+</body>
+
+</html>
