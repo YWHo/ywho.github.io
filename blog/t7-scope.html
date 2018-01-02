@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Technical - Scope</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Technical - Scope</h1>
+        </div>
+        <div class="row date">02 January 2018</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="http://i.imgur.com/AQtRpBR.jpg"
+                        alt="Scope image" />
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        What 'scope' is, and how it works in JavaScript.
+                    </h4>
+                    <p>
+                        'Scope' is a term used in programming to mean the visibility of a variable or function. There are many type of scopes in Javascript:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Global scope</strong>: Any variable declared outside of functions inside a file is globally visible to all the functions or expression within the file. For example:
+                            <pre class="syntaxbox">var temperature = 32
+
+function myFunction() {
+    console.log("Current temperature is: " + 32 + " degree celsius");
+    // output: Current temperature is: 32 degree celsius
+}
+</pre>
+                        </li>
+                        <li>
+                            <strong>Local scope</strong>: Any variable declared inside a function will not be visible outside of the function. For example:
+
+                            <pre class="syntaxbox">function myFunction() {
+    var innerValue = 6;
+          
+    console.log("Within function: " + innerValue);
+    // output: Within function: 6
+}
+
+console.log("Outside function: " + innerValue);
+// Browser will report "ReferenceError: innerValue is not defined"
+</pre>
+                        </li>
+                        <li>
+                            <strong>Auto global scope</strong>: If there is an assignment expression on a variable that is never declared, the variable is treated as a global variable and visible globally. For example:
+                            <pre class="syntaxbox">myFunction();
+console.log("The car is: " + car);
+// Output: The car is: mazda
+                                
+function myFunction() {
+    car = "mazda;
+}
+</pre>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+            </div>
+            <div class="four columns sidebar">
+                <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+    <div class="container footnote">
+        <h4 class="footnote-header">References:</h4>
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/js/js_scope.asp">
+                    W3School - JS Scope
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
+
+        w3.includeHTML();
+
+    </script>
+
+</body>
+
+</html>
