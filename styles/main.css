@@ -87,12 +87,12 @@ a:hover, a:active { text-decoration: underline; color: #df7401; }
 
 pre.syntaxbox {
     font-family: monospace;
-    white-space: pre-wrap;
     border-left: 4px solid #ccc;
     background-color: #99ccee;
     padding: 8px 16px; 
     margin-left: 20px;
     margin-right: 20px;
+    overflow-x: auto;
 }
 
 /* Bigger than 550 */
