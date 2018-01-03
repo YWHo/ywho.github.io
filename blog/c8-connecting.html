@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cultural - Connecting</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Cultural - Connecting</h1>
+        </div>
+        <div class="row date">03 January 2018</div>
+        <div class="row">
+            <div class="eight columns">
+                <div class="image-box">
+                    <img src="https://www.fusf-temp.org/wp-content/uploads/2017/10/tmp581553495346249729.jpg"
+                        alt="Connecting image" />
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        Have you tried using any of the insight and techniques for growing trust and sincerity? How did it go?
+                    </h4>
+                    <p>
+                        In the past, I happened to listen mindfully to the sharing of life stories of different people. I could feel the sadness. I could feel the difficulties. I could feel the worries. And I could feel the pain. In my heart, I sincerely wish I could offer help, give advice or at least wish the person could go through the hurdles. I didn't aware that what I did was close to 'Empathic listening'. It was not really 'Empathic listening' yet, because I still have tendency to jump to conclusion or offering help. But I have a feeling that the person whom I listened was growing trust toward me, even though it was our first time meeting each other. 
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        Try empathic listening - how did it go?
+                    </h4>
+                    <p>
+                        Unsurprisingly, it just felt good. All the while, my biology brain has this wired, but I was not aware of it. I just need to do more practice to make 'empathic listening' the natural part of me.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        How did you find the loving kindness meditation?
+                    </h4>
+                    <p>
+                        I believe the idea of loving kindness meditation was similar to a song I listened in the past. The name of the song is <a href="http://www.buddhanet.net/chant-metta.htm">The Chant of Metta</a>. They were so similar that I immediately recall the song. The author of 'Search Inside Yourself' has brilliantly explain the logics and the effect of 'loving kindness meditation'. Now, it make sense to me that why I felt peace and bliss whenever I recite the translated version of 'The Chant of Metta' song. I get the same feeling of peace and bliss when doing 'loving kindness meditation'. After doing the 'loving kindness meditation', it just seem easy to forgive someone who have hurt or betrayed me in the past. If you are reading this, may be you would like to listen to the song in Youtube. <a href="https://www.youtube.com/watch?v=D644BWAUOXo">Please click here</a>.
+                    </p>
+                </div>
+                <div class="question-answer">
+                    <h4>
+                        Complete the political awareness exercise here in writing.
+                    </h4>
+                    <p>
+                        In the past, I had a difficult situation with my Technical Lead. As a new employee on board, I saw that the company's app had more than 1000 compilar warnings. I strongly concerned that the app might have hidden bugs or quality issues if the warnings were not curated and cleared. As an experieced software developer, it was first time that I saw a software accumulated more than 1000 compiler warning messages that get ignored. While I strongly believed that the issues must be resolved, my Technical Lead disagreed with me strongly.
+                    </p>
+                    <p>
+                        From my Technical Lead's perspective, the warning messages didn't cause any quality issues in the software so far. A lot of issues had been reported and tracked, and there were a lot  of higher priority bugs in the backlog that need our attentions. In my Technical Lead's opinion, it will be more time efficient to focus on reported higher priority issues first. 
+                    </p>
+                </div>
+            </div>
+            <div class="four columns sidebar">
+                <div id="includeSidebar" w3-include-html="sideIndex.html"></div>
+            </div>
+        </div>
+        <a class="row button button-go-back" href="../index.html">Go back to HOME</a>
+    </div>
+
+    <div class="extra1" role="presentation"></div>
+
+    <script>
+        // This part of the code force browser to reload latest sideIndex.html
+        let incSideBar = document.getElementById('includeSidebar');
+        let filePath = "sideIndex.html?random=" + Math.random();
+        incSideBar.setAttribute("w3-include-html", filePath);
+
+        w3.includeHTML();
+
+    </script>
+
+</body>
+
+</html>
